@@ -1,5 +1,8 @@
-const logger = require('./logger')
+const path = require("path");
+console.log(path.parse(__filename));
 
-logger('message')
-console.log(__filename)
-console.log(__dirname)
+const os = require('os')
+console.log(os.freemem())
+console.log(os.totalmem())
+console.log(os.hostname())
+console.log(os.type())
